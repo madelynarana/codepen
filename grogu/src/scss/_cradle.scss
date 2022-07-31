@@ -124,3 +124,15 @@
         z-index: -7;
     }
 }
+
+.cradle-shadow {
+    position: absolute;
+    height: 20px;
+    width: 215px;
+    left: 50%;
+    background-color: #616266;
+    bottom: 14%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 4px 5px 41px -4px rgb(255 255 255 / 70%);
+}
