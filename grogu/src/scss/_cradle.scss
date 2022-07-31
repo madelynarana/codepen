@@ -1,7 +1,6 @@
 .cradle {
     height: 243px;
-    width: 274px;
-    background-color: #52f1118a;
+    width: 278px;
     position: absolute;
     top: 12%;
     left: 13%;
@@ -20,11 +19,108 @@
     &::after {
         content: "";
         position: absolute;
-        height: 179px;
+        height: 154px;
         width: 196px;
-        background-color: #3370a5;
+        background-color: #CFD0D4;
         top: 0%;
         left: 0%;
         border-top-right-radius: 50%;
+    }
+}
+
+.cover-top {
+    position: absolute;
+    height: 153px;
+    width: 162px;
+    background-color: #fff;
+    top: 6px;
+    left: 31px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 144px;
+        width: 136px;
+        top: 6px;
+        left: 16px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        background-color: #515256;
+    }
+}
+
+.cover-bottom {
+    position: absolute;
+    height: 33px;
+    width: 221px;
+    background-color: #515256;
+    top: 124px;
+    left: 44px;
+    border-radius: 50%;
+    z-index: 4;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 43px;
+        width: 36px;
+        top: 5px;
+        background-color: #fff;
+        border: 2px solid #cfd0d4;
+        left: -23px;
+        z-index: 9;
+        border-radius: 50%;
+    }
+}
+
+.accessory {
+    position: absolute;
+    height: 55px;
+    width: 248px;
+    background-color: #fff;
+    border: 3px solid #CFD0D4;
+    top: 48%;
+    left: 11%;
+    border-radius: 44%;
+    z-index: 1;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 8px;
+        top: 34px;
+        left: 210px;
+        background-color: #CFD0D4;
+        z-index: 4;
+        transform: rotate(345deg);
+        box-shadow: 12px 0 #cfd0d4, 24px -3px #cfd0d4;
+    }
+}
+
+.shadow {
+    position: absolute;
+    height: 67px;
+    width: 185px;
+    background-color: #CFD0D4;
+    top: 163px;
+    left: -3%;
+    border-radius: 50%;
+    transform: rotate(27deg);
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 183px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 36px;
+        top: -56px;
+        z-index: -7;
     }
 }
