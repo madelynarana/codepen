@@ -1,11 +1,40 @@
-body{
-  
-    background-color: aqua;
- }
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     height: 100vh;
-    background-color: red;
-    position: relative;
-    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    background-color: #616266;
+    place-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.character {
+    position: absolute;
+    height: 348px;
+    width: 100%;
+    background-color: rgba(83, 74, 74, 0.466);
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    padding: 17px 0;
+    text-align: center;
+    width: 100%;
 }
