@@ -1,0 +1,30 @@
+.cradle {
+    height: 243px;
+    width: 274px;
+    background-color: #52f1118a;
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 91px;
+        width: 277px;
+        background-color: #f0f8ff;
+        top: 153px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 179px;
+        width: 196px;
+        background-color: #3370a5;
+        top: 0%;
+        left: 0%;
+        border-top-right-radius: 50%;
+    }
+}
