@@ -1,7 +1,7 @@
-# Grogu - Pure CSS
+# Frank and Len - Pure CSS
 
 <p align="center" class="bg">
-  <a href="https://github.com/madelynarana/pure_css/tree/master/frank_len"><img src="./src/img/frankLen.png" /></a>
+  <a href="https://github.com/madelynarana/pure_css/tree/master/frank_len"><img src="./src/img/franklen.png" /></a>
 </p>
 
 <b>/dist/</b> Development code.
