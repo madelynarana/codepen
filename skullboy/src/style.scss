@@ -688,3 +688,47 @@ body {
         position: absolute;
     }
 }
+
+@keyframes expand-width {
+    100% {
+        width: 130px;
+    }
+}
+
+@keyframes move-legs {
+    100% {
+        top: 72px;
+        height: 52px;
+        transform: scale(1);
+    }
+}
+
+@keyframes move-femur {
+    100% {
+        transform: scale(1) rotate(20deg);
+    }
+}
+
+@keyframes move-femur-r {
+    100% {
+        transform: scale(1) rotate(-20deg);
+    }
+}
+
+@keyframes move-arm-l {
+    100% {
+        transform: scaleY(-1);
+    }
+}
+
+@keyframes move-arm-r {
+    100% {
+        transform: rotate(180deg) scaleZ(-1);
+    }
+}
+
+@keyframes shake {
+    100% {
+        left: 13%;
+    }
+}
