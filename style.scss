@@ -1,10 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-label[for="menu"]{
-    border: 1px solid;
+label[for="menu"] {
     height: 60px;
     width: 60px;
     top: 24px;
@@ -13,7 +12,7 @@ label[for="menu"]{
     position: fixed;
 }
 
-label[for="menu"] div{
+label[for="menu"] div {
     display: flex;
     height: 100%;
     width: 100%;
@@ -23,9 +22,57 @@ label[for="menu"] div{
     align-items: center;
 }
 
-.menu-line{
+.menu-line {
     height: 6px;
     width: 27px;
-    background-color: chartreuse;
+    background-color: #000;
     margin: 5px 0;
+    transition: 450ms;
+}
+
+#menu:checked + label {
+    div {
+        span {
+            &:nth-child(1) {
+                transform: translateY(16px) rotate(45deg);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &:nth-child(4) {
+                transform: translateY(16px) rotate(-45deg);
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-16px) rotate(-45deg);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &:nth-child(6) {
+                transform: translateY(-16px) rotate(45deg);
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px
+            }
+
+            &:nth-child(2),
+            &:nth-child(5) {
+                transform: scale(0);
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                transform-origin: right;
+            }
+
+            &:nth-child(4),
+            &:nth-child(6),
+            &:nth-child(5) {
+                transform-origin: left;
+            }
+        }
+    }
 }
