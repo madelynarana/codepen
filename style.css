@@ -44,6 +44,10 @@ label[for=menu] div {
   border-bottom-left-radius: 0px;
 }
 
+#menu {
+  display: none;
+}
+
 #menu:checked + label div span:nth-child(1) {
   transform: translateY(16px) rotate(45deg);
   border-top-left-radius: 5px;
@@ -82,9 +86,13 @@ label[for=menu] div {
   height: 100vh;
   top: 0;
   right: 0;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: 1s;
   padding: 20px;
   position: fixed;
   width: 400px;
+  z-index: 50;
 }
 .sidebar a {
   color: #000;
@@ -114,4 +122,47 @@ label[for=menu] div {
 }
 .sidebar ul li:hover {
   text-decoration: dashed;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.container h1 {
+  padding: 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3490196078);
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+  position: fixed;
+  transition: 500ms;
+}
+
+#menu:checked ~ .sidebar {
+  transform: translate(10%);
+  visibility: visible;
+}
+
+#menu:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.8;
 }
