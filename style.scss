@@ -199,3 +199,17 @@ label[for="menu"] div {
     visibility: visible;
     opacity: 0.8;
 }
+
+//-----  Footer ----------
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    a{
+        color: #B7D300;
+    }
+}

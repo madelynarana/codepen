@@ -161,3 +161,16 @@ label[for=menu] div {
   visibility: visible;
   opacity: 0.8;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 11px;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer a {
+  color: #B7D300;
+}
