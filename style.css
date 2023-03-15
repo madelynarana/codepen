@@ -124,10 +124,6 @@ label[for=menu] div {
   text-decoration: dashed;
 }
 
-body {
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
   place-items: center;
@@ -141,7 +137,6 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-
 .container h1 {
   padding: 20px;
 }

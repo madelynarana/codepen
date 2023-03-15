@@ -27,6 +27,8 @@ label[for="menu"] div {
     align-items: center;
 }
 
+//-----  Icono del menu abierto ----------
+
 .menu-line {
     height: 6px;
     width: 27px;
@@ -50,9 +52,10 @@ label[for="menu"] div {
     }
 }
 
-#menu{
+#menu {
     display: none;
 }
+//-----  Icono del menu  cerrado ----------
 
 #menu:checked+label {
     div {
@@ -101,9 +104,11 @@ label[for="menu"] div {
     }
 }
 
+//-----  Menú de navegación ----------
+
 .sidebar {
     background-color: #B7D300;
-    color:#000;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
     height: 100vh;
@@ -121,13 +126,13 @@ label[for="menu"] div {
         color: #000;
         text-decoration: none;
 
-        &:hover{
+        &:hover {
             color: #fff;
             transition: 800sm;
         }
 
-        &:active{
-            color:aqua;
+        &:active {
+            color: aqua;
         }
     }
 
@@ -146,22 +151,15 @@ label[for="menu"] div {
         li {
             padding: 20px;
 
-            &:hover{
-                
+            &:hover {
+
                 text-decoration: dashed;
             }
         }
     }
-
-
 }
 
-
-body{
-    box-sizing: border-box;
-}
-
-.container{
+.container {
     display: flex;
     place-items: center;
     height: 100vh;
@@ -173,14 +171,13 @@ body{
     align-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-}
 
-.container{
-    h1{
+    h1 {
         padding: 20px;
     }
 }
-.overlay{
+
+.overlay {
     background-color: #00000059;
     height: 100vh;
     width: 100%;
@@ -191,11 +188,14 @@ body{
     transition: 500ms;
 }
 
-#menu:checked ~ .sidebar{
+//-----  Icono del menu ----------
+
+#menu:checked ~ .sidebar {
     transform: translate(10%);
     visibility: visible;
 }
-#menu:checked ~ .overlay{
+
+#menu:checked ~ .overlay {
     visibility: visible;
     opacity: 0.8;
 }
