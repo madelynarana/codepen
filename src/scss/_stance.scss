@@ -1,33 +1,31 @@
 .stance {
     background: url('../image/sprit.png') no-repeat;
-    height: 90px;
-    width: 130px;
-    background-position: 8px -90px;
-    animation: stance 1s steps(1) infinite;
+    background-position: -1px -91px;
+    animation: stance 0.8s steps(1) infinite;
 }
 
 @keyframes stance {
-    17% {
-        background-position: 8px -90px;
+    0% {
+        background-position: -1px -91px;
     }
 
-    33% {
-        background-position: -77px -90px;
+    20% {
+        background-position: -91px -91px;
     }
 
-    49% {
-        background-position: -167px -90px;
+    40% {
+        background-position: -181px -91px;
     }
 
-    65% {
-        background-position: -260px -90px;
+    60% {
+        background-position: -271px -91px;
     }
 
-    82% {
-        background-position: -345px -90px;
+    80% {
+        background-position: -361px -91px;
     }
 
     100% {
-        background-position: -437px -90px;
+        background-position: -451px -91px;
     }
 }
