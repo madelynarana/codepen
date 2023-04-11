@@ -1,0 +1,18 @@
+.jump {
+    background: url('../image/sprit.png') no-repeat;
+    background-position: -1px -451px;
+    animation: jump 0.6s steps(1) infinite;
+}
+
+@keyframes jump {
+    30% {
+        background-position: -1px -451px;
+    }
+    60% {
+        background-position: -91px -451px;
+    }
+
+    100% {
+        background-position: -181px -451px;
+    }
+}
