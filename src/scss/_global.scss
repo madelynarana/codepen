@@ -6,9 +6,20 @@ body{
 .naruto{
     position: absolute;
     border: 1px solid;
-    top:20px;
-    left: 20px;
+    top: 162px;
+    left: 18px;
 }
 
+.background{
+    background: url('../image/background.jpg') no-repeat;
+    background-size: cover;
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    overflow: hidden;
+}
 
 
