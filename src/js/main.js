@@ -1,19 +1,39 @@
 
 const narutoCharacter = document.getElementById('naruto-character');
 
-const control = ( e ) => {
+let xAxis = 0,
+    yAxis = 0;
 
-    console.log( e.keyCode );
 
-    switch ( e.keyCode ) {
+
+const run = () => {
+
+    xAxis += 4;
+    narutoCharacter.style.left = `${xAxis}px`;
+
+    narutoCharacter.classList.add('run');
+
+    setTimeout(() => {
+
+        narutoCharacter.classList.remove('run');
+
+    }, 2000);
+}
+
+const control = (e) => {
+
+    switch (e.keyCode) {
+
         case 39:
-            console.log('Adelante...');
+
+            run();
+
             break;
 
         case 38:
             console.log('arriba...');
             break;
-        
+
         case 37: console.log('atrás...');
             break;
 
@@ -28,14 +48,14 @@ const control = ( e ) => {
         case 88:
             console.log('rasenshuriken');
             break;
-        
+
         case 67:
             console.log('gamayu_endan');
             break;
-        
+
         default: console.log('Esta tecla no es válida');
     }
 }
 
 
-document.addEventListener('keydown', control );
+document.addEventListener('keydown', control);
