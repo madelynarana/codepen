@@ -1,0 +1,193 @@
+@use 'variable';
+
+.gamayu_endan {
+    animation: 9s gamayu_endan steps(1) infinite;
+    background-position: 0px -574px;
+    background: variable.$sprite-background;
+    height: 96px;
+    height: 96px;
+    width: 212px;
+    width: 56px;
+}
+
+@keyframes gamayu_endan {
+    0% {
+        background-position: -7px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    2% {
+        background-position: -65px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    4% {
+        background-position: -118px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    6% {
+        background-position: -168px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    10% {
+        background-position: -216px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    14% {
+        background-position: -267px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    18% {
+        background-position: -318px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    22% {
+        background-position: -380px -370px;
+        height: 94px;
+        width: 56px;
+    }
+
+    26% {
+        background-position: -431px -370px;
+        height: 94px;
+        width: 47px;
+    }
+
+    30% {
+        background-position: -475px -370px;
+        height: 94px;
+        width: 47px;
+    }
+
+    32% {
+        background-position: -537px -370px;
+        height: 94px;
+        width: 38px;
+    }
+
+    36% {
+        background-position: -532px -370px;
+        height: 94px;
+        width: 138px;
+    }
+
+    40% {
+        background-position: -694px -370px;
+        height: 94px;
+        width: 138px;
+    }
+
+    44% {
+        background-position: -844px -370px;
+        height: 94px;
+        width: 138px;
+    }
+
+    48% {
+        background-position: -1009px -370px;
+        height: 94px;
+        width: 138px;
+    }
+
+    52% {
+        background-position: -1158px -370px;
+        height: 94px;
+        width: 138px;
+    }
+
+    56% {
+        background-position: -3px -463px;
+        width: 100px;
+        height: 96px;
+    }
+
+    60% {
+        background-position: -117px -463px;
+        width: 100px;
+        height: 96px;
+    }
+
+    64% {
+        background-position: -227px -463px;
+        width: 141px;
+        height: 96px
+    }
+
+    68% {
+        background-position: -379px -463px;
+        width: 160px;
+        height: 96px;
+    }
+
+    72% {
+        background-position: -558px -463px;
+        width: 181px;
+        height: 96px;
+    }
+
+    74% {
+        background-position: -759px -463px;
+        width: 181px;
+        height: 96px;
+    }
+
+    76% {
+        background-position: -960px -463px;
+        width: 233px;
+        height: 96px;
+    }
+
+    80% {
+        background-position: 0px -574px;
+        height: 96px;
+        width: 212px;
+    }
+
+    84% {
+        background-position: -223px -574px;
+        height: 96px;
+        width: 212px;
+    }
+
+    88% {
+        background-position: -438px -574px;
+        width: 145px;
+        height: 96px;
+    }
+
+    92% {
+        background-position: -582px -574px;
+        width: 145px;
+        height: 96px;
+    }
+
+    96% {
+        background-position: -738px -574px;
+        width: 58px;
+        height: 96px;
+    }
+
+    98% {
+        background-position: -792px -574px;
+        width: 49px;
+        height: 96px;
+    }
+
+    100% {
+        background-position: -838px -574px;
+        width: 49px;
+        height: 96px;
+    }
+}
