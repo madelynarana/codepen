@@ -1,7 +1,8 @@
 
 const narutoCharacter = document.getElementById('naruto-character');
 
-
+let xAxis = 0,
+    maxleft = 200;
 
 
 const gamayu_endan = () => {
@@ -23,9 +24,12 @@ const rasengan = () => {
 }
 
 const run = () => {
-    console.log('Corriendo');
 
-    narutoCharacter.classList.add('run');
+    xAxis += 10;
+
+    narutoCharacter.classList.add('run');    
+
+    if (xAxis < maxleft) narutoCharacter.style.left = `${xAxis}px`;
     
 }
 
@@ -35,6 +39,7 @@ const keyboardActions = {
     ArrowDown: () => {
         narutoCharacter.classList.add('crouch');
     },
+    ArrowRight: () => run(),
 
     KeyZ: () => gamayu_endan(),
     KeyX: () => rasengan(),
@@ -59,6 +64,6 @@ addEventListener("keydown", function ( e ) {
 
 document.addEventListener('keyup', function ( e ) {
     
-    narutoCharacter.classList.remove('crouch');
+    narutoCharacter.classList.remove('crouch','run');
 
 })
