@@ -5,21 +5,22 @@ body{
 
 .naruto{
     position: absolute;
-    border: 1px solid;
-    top: 162px;
-    left: 18px;
+    bottom: 17px;
+    left: 48px;
 }
 
 .background{
     background: url('../image/background.jpg') no-repeat;
     background-size: cover;
-    height: 40%;
+    height: 50vh;
     left: 50%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
-    width: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
     overflow: hidden;
+    /* padding: 148px; */
+    box-sizing: border-box;
 }
 
 
