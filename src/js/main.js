@@ -80,6 +80,7 @@ const rasenshuriken = () => {
 
 }
 
+
 const keyboardActions = {
 
     ArrowUp:    () => jump(),
@@ -96,14 +97,14 @@ const keyboardActions = {
 };
 
 isActiveOpeningSound.addEventListener('change', () => {
-    
+
     ( isActiveOpeningSound.checked ) ? openingSound.play() : openingSound.pause();
 })
-
 
 addEventListener("keydown", function ( e ) {
 
     isActiveOpeningSound.checked = false; 
+    openingSound.pause();
     
     const action = keyboardActions[ e.code ] || keyboardActions.default;
 
