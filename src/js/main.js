@@ -1,7 +1,9 @@
 
-const narutoCharacter = document.getElementById('naruto-character');
+const narutoCharacter        = document.getElementById('naruto-character'),
+        openingSound         = document.getElementById('intro-sound'),
+        isActiveOpeningSound = document.getElementById('chkbox-sound');
     
-let xAxis = 0,
+let xAxis   = 0,
     maxleft = 500,
     minLeft = 50;
 
@@ -9,13 +11,13 @@ let xAxis = 0,
 const AddClassAndSound = ( nameClass, soundById ) => {
     
     narutoCharacter.classList.add( nameClass );
-    document.querySelector( soundById ).play();
+    document.getElementById( soundById ).play();
     
 }
 
 const gamayu_endan = () => {
     
-    AddClassAndSound('gamayu_endan', '#gamayu-sound');
+    AddClassAndSound('gamayu_endan', 'gamayu-sound');
 
     setTimeout(() => {
         narutoCharacter.classList.remove('gamayu_endan');
@@ -25,7 +27,7 @@ const gamayu_endan = () => {
 
 const rasengan = () => {
     
-    AddClassAndSound('rasengan', '#rasengan-sound');
+    AddClassAndSound('rasengan', 'rasengan-sound');
 
     setTimeout(() => {
         narutoCharacter.classList.remove('rasengan');
@@ -36,7 +38,7 @@ const run = () => {
 
     xAxis += 10;
 
-    AddClassAndSound('run', '#run-sound');
+    AddClassAndSound('run', 'run-sound');
 
     if (xAxis <= maxleft) narutoCharacter.style.left = `${xAxis}px`
 
@@ -48,27 +50,27 @@ const back = () => {
 
     narutoCharacter.classList.add('jump');
 
-    AddClassAndSound('jump', '#jump-sound');
+    AddClassAndSound('jump', 'jump-sound');
 
-    if (xAxis > minLeft) narutoCharacter.style.left = `${xAxis}px`;
+    if ( xAxis > minLeft ) narutoCharacter.style.left = `${xAxis}px`;
 
 }
 
 
 const crouch = () => {
 
-    AddClassAndSound('crouch', '#crouch-sound');
+    AddClassAndSound('crouch', 'crouch-sound');
 }
 
 const jump = () => {
 
-    AddClassAndSound('jump', '#jump-sound');
+    AddClassAndSound('jump', 'jump-sound');
 
 }
 
 const rasenshuriken = () => {
 
-    AddClassAndSound('rasenshuriken', '#rasenshuriken-sound');
+    AddClassAndSound('rasenshuriken', 'rasenshuriken-sound');
 
     setTimeout(() => {
 
@@ -93,19 +95,24 @@ const keyboardActions = {
 
 };
 
+isActiveOpeningSound.addEventListener('change', () => {
+    
+    ( isActiveOpeningSound.checked ) ? openingSound.play() : openingSound.pause();
+})
 
-addEventListener("keydown", function (e) {
 
-    console.log(e.code);
+addEventListener("keydown", function ( e ) {
 
-    const action = keyboardActions[e.code] || keyboardActions.default;
+    isActiveOpeningSound.checked = false; 
+    
+    const action = keyboardActions[ e.code ] || keyboardActions.default;
 
     action();
 
 });
 
 
-document.addEventListener('keyup', function (e) {
+document.addEventListener('keyup', function ( e ) {
 
     narutoCharacter.classList.remove('crouch', 'run', 'jump');
 
