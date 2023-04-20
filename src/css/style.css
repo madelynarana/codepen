@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.naruto {
+  position: absolute;
+  bottom: 17px;
+  left: 48px;
+}
+
+.background {
+  background: url("../image/background.jpg") no-repeat;
+  background-size: cover;
+  height: 50vh;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  overflow: hidden;
+  /* padding: 148px; */
+  box-sizing: border-box;
+}
+
+.modal {
+  display: flex;
+  background-color: rgb(250, 236, 218);
+  width: 48%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+  margin: 0 auto;
+}
+.modal div {
+  display: block;
+}
+
+.photo {
+  background: url("../image/sprite.png") no-repeat;
+  height: 46px;
+  width: 31px;
+  background-position: -870px -449px;
+  background-size: 980px;
+  padding: 20px;
+  background-color: rgb(250, 236, 218);
+}
+
+.stance {
+  background: url("../image/sprite.png") no-repeat;
+  background-position: -1px -24px;
+  height: 80px;
+  width: 43px;
+  animation: stance 0.8s steps(1) infinite;
+}
+
+@keyframes stance {
+  0% {
+    background-position: -1px -24px;
+  }
+  20% {
+    background-position: -43px -24px;
+  }
+  40% {
+    background-position: -84px -24px;
+  }
+  60% {
+    background-position: -127px -24px;
+  }
+  80% {
+    background-position: -168px -24px;
+  }
+  100% {
+    background-position: -212px -24px;
+  }
+}
+.run {
+  animation: run 0.4s steps(1) infinite;
+  background-position: -679px -33px;
+  background: url("../image/sprite.png") no-repeat;
+  height: 77px;
+  width: 64px;
+}
+
+@keyframes run {
+  0% {
+    background-position: -679px -33px;
+  }
+  66% {
+    background-position: -746px -33px;
+  }
+  100% {
+    background-position: -806px -33px;
+  }
+}
+.crouch {
+  background: url("../image/sprite.png") no-repeat;
+  animation: crouch 1s steps(1) infinite;
+  height: 73px;
+  width: 48px;
+  background-position: -300px -34px;
+}
+
+@keyframes crouch {
+  0% {
+    background-position: -348px -30px;
+  }
+  100% {
+    background-position: -300px -34px;
+  }
+}
+.jump {
+  animation: jump 0.6s steps(1) infinite;
+  background: url("../image/sprite.png") no-repeat;
+  height: 73px;
+  width: 48px;
+  background-position: -431px -32px;
+}
+
+@keyframes jump {
+  30% {
+    background-position: -431px -32px;
+  }
+  60% {
+    background-position: -542px -26px;
+  }
+  100% {
+    background-position: -601px -32px;
+  }
+}
+.rasengan {
+  animation: rasengan 3s steps(1) infinite;
+  background-position: -40px -150px;
+  background: url("../image/sprite.png") no-repeat;
+  height: 72px;
+  width: 77px;
+}
+
+@keyframes rasengan {
+  0% {
+    background-position: -40px -150px;
+  }
+  5% {
+    background-position: -124px -150px;
+  }
+  10% {
+    background-position: -208px -150px;
+  }
+  15% {
+    background-position: -271px -150px;
+  }
+  20% {
+    background-position: -347px -150px;
+  }
+  25% {
+    background-position: -470px -150px;
+  }
+  30% {
+    background-position: -527px -150px;
+  }
+  35% {
+    background-position: -591px -150px;
+  }
+  40% {
+    background-position: -904px -150px;
+  }
+  45% {
+    background-position: -968px -150px;
+  }
+  50% {
+    background-position: -1057px -150px;
+  }
+  55% {
+    background-position: -18px -265px;
+  }
+  60% {
+    background-position: -90px -265px;
+  }
+  65% {
+    background-position: -158px -265px;
+  }
+  75% {
+    background-position: -227px -265px;
+  }
+  80% {
+    background-position: -302px -265px;
+  }
+  85% {
+    background-position: -374px -265px;
+  }
+  90% {
+    background-position: -446px -265px;
+  }
+  100% {
+    background-position: -525px -265px;
+  }
+}
+.gamayu_endan {
+  animation: 9s gamayu_endan steps(1) infinite;
+  background-position: -7px -370px;
+  background: url("../image/sprite.png") no-repeat;
+  height: 96px;
+  width: 56px;
+}
+
+@keyframes gamayu_endan {
+  0% {
+    background-position: -7px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  2% {
+    background-position: -65px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  4% {
+    background-position: -118px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  6% {
+    background-position: -168px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  10% {
+    background-position: -216px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  14% {
+    background-position: -267px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  18% {
+    background-position: -318px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  22% {
+    background-position: -380px -370px;
+    height: 94px;
+    width: 56px;
+  }
+  26% {
+    background-position: -431px -370px;
+    height: 94px;
+    width: 47px;
+  }
+  30% {
+    background-position: -475px -370px;
+    height: 94px;
+    width: 47px;
+  }
+  32% {
+    background-position: -537px -370px;
+    height: 94px;
+    width: 38px;
+  }
+  36% {
+    background-position: -532px -370px;
+    height: 94px;
+    width: 138px;
+  }
+  40% {
+    background-position: -694px -370px;
+    height: 94px;
+    width: 138px;
+  }
+  44% {
+    background-position: -844px -370px;
+    height: 94px;
+    width: 138px;
+  }
+  48% {
+    background-position: -1009px -370px;
+    height: 94px;
+    width: 138px;
+  }
+  52% {
+    background-position: -1158px -370px;
+    height: 94px;
+    width: 138px;
+  }
+  56% {
+    background-position: -3px -463px;
+    width: 100px;
+    height: 96px;
+  }
+  60% {
+    background-position: -117px -463px;
+    width: 100px;
+    height: 96px;
+  }
+  64% {
+    background-position: -227px -463px;
+    width: 141px;
+    height: 96px;
+  }
+  68% {
+    background-position: -379px -463px;
+    width: 160px;
+    height: 96px;
+  }
+  72% {
+    background-position: -558px -463px;
+    width: 181px;
+    height: 96px;
+  }
+  74% {
+    background-position: -759px -463px;
+    width: 181px;
+    height: 96px;
+  }
+  76% {
+    background-position: -960px -463px;
+    width: 233px;
+    height: 96px;
+  }
+  80% {
+    background-position: 0px -574px;
+    height: 96px;
+    width: 212px;
+  }
+  84% {
+    background-position: -223px -574px;
+    height: 96px;
+    width: 212px;
+  }
+  88% {
+    background-position: -438px -574px;
+    width: 145px;
+    height: 96px;
+  }
+  92% {
+    background-position: -582px -574px;
+    width: 145px;
+    height: 96px;
+  }
+  96% {
+    background-position: -738px -574px;
+    width: 58px;
+    height: 96px;
+  }
+  98% {
+    background-position: -792px -574px;
+    width: 49px;
+    height: 96px;
+  }
+  100% {
+    background-position: -838px -574px;
+    width: 49px;
+    height: 96px;
+  }
+}
+.rasenshuriken {
+  animation: 5s rasenshuriken steps(1) infinite;
+  background-position: -7px -370px;
+  background: url("../image/sprite.png") no-repeat;
+  height: 96px;
+  width: 56px;
+}
+
+@keyframes rasenshuriken {
+  0% {
+    background-position: -9px -712px;
+  }
+  4% {
+    background-position: -81px -712px;
+  }
+  9% {
+    background-position: -150px -712px;
+  }
+  14% {
+    background-position: -230px -712px;
+  }
+  19% {
+    background-position: -301px -712px;
+  }
+  23% {
+    background-position: -365px -712px;
+  }
+  28% {
+    background-position: -432px -712px;
+  }
+  33% {
+    background-position: -501px -712px;
+    height: 96px;
+    width: 63px;
+  }
+  38% {
+    background-position: -571px -712px;
+    width: 63px;
+  }
+  42% {
+    background-position: -643px -712px;
+    width: 63px;
+  }
+  47% {
+    background-position: -711px -712px;
+    width: 63px;
+  }
+  52% {
+    background-position: -795px -712px;
+    width: 97px;
+  }
+  57% {
+    background-position: -876px -712px;
+    width: 92px;
+  }
+  61% {
+    background-position: -955px -712px;
+    width: 92px;
+  }
+  66% {
+    background-position: -1034px -712px;
+    width: 92px;
+  }
+  71% {
+    background-position: -5px -830px;
+    width: 66px;
+  }
+  76% {
+    background-position: -74px -830px;
+    width: 84px;
+  }
+  80% {
+    background-position: -170px -830px;
+    width: 115px;
+  }
+  85% {
+    background-position: -286px -830px;
+    width: 148px;
+  }
+  90% {
+    background-position: -456px -830px;
+    width: 194px;
+  }
+  95% {
+    background-position: -1103px -830px;
+    width: 56px;
+  }
+  100% {
+    background-position: -1152px -830px;
+    width: 56px;
+  }
+}
