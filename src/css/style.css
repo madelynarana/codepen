@@ -49,6 +49,14 @@ body {
   background-color: rgb(250, 236, 218);
 }
 
+.developer {
+  width: 200px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  top: 50px;
+}
+
 .stance {
   background: url("../image/sprite.png") no-repeat;
   background-position: -1px -24px;
