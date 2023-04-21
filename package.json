@@ -1,12 +1,12 @@
 {
-  "name": "compilador",
+  "name": "naruto_uzumaki",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
 
     "0":"---------------------- Producción -------------------------------------",
-    "html-mini": "html-minifier --input-dir ./src/ --output-dir ./dist/ --remove-comments --collapse-whitespace --minify-css --minify-js --file-ext html",
+    "html-mini": "html-minifier --input-dir ./ --output-dir ./dist/ --remove-comments --collapse-whitespace --minify-css --minify-js --file-ext html",
     "sass-mini": "sass  --style compressed --no-source-map --no-error-css --load-path=node_modules ./src/scss/main.scss:./dist/css/style.css",
     "css-prefix": "postcss --replace --no-map ./dist/css/*.css --use autoprefixer",
     "build": "npm-run-all html-mini sass-mini css-prefix",
