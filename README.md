@@ -3,6 +3,8 @@
 
 # 💜 Demo   [click aquí](https://madelynarana.github.io/naruto_uzumaki/)
 
+<img src="https://raw.githubusercontent.com/madelynarana/assets/master/naruto/naruto.gif">
+
 ## 🧐 ¿Qué hay en el repositorio?
 
 Vista general de la estructura del proyecto.
