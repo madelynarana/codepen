@@ -1,7 +1,7 @@
 # Skull boy - Pure CSS
 
 <p align="center" class="bg">
-  <a href="https://github.com/madelynarana/codepen/tree/master/007_skullboy"><img src="https://raw.githubusercontent.com/madelynarana/assets/master/codepen/skullboy.png" /></a>
+  <a href="https://madelynarana.github.io/codepen/007_skullboy/public/" target="_blank"><img src="https://raw.githubusercontent.com/madelynarana/assets/master/codepen/skullboy.png" /></a>
 </p>
 
 <b>/dist/</b> Development code.
