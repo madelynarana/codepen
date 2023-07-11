@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./app.js"></script>
-</head>
-<body>
-    <div id="roor"></div>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="container-col">
+                <div class="col-4 score">
+                    <img src="./images/nebula.png" alt="">
+                    Score <span id="score"> 01 </span>
+                </div>
+
+                <div class="col-8 bg-green">
+                    <div>
+                        Encontraste una coincidencia!
+                    </div>
+
+                    <div>
+                        <img src="./images/mantis.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="./images/blank.png" alt="name">
+                <img src="./images/blank.png" alt="name">
+                <img src="./images/white.png" alt="name">
+                <img src="./images/drax.png" alt="name">
+                <img src="./images/rocket.png" alt="name">
+                <img src="./images/gamora.png" alt="name">
+                <img src="./images/yondu.png" alt="name">
+                <img src="./images/star_lord.png" alt="name">
+                <img src="./images/blank.png" alt="name">
+                <img src="./images/blank.png" alt="name">
+                <img src="./images/white.png" alt="name">
+                <img src="./images/gamora.png" alt="name">
+            </div>
+
+            <button class="btn-new-game"> NEW GAME</button>
+        </div>
+    </body>
+
 </html>
