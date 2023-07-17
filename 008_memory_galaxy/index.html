@@ -8,6 +8,10 @@
         <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
         <title>Memory Game</title>
         <link rel="stylesheet" href="./style.css">
+        <script defer src="./app.js"></script>
+        <style>
+            
+        </style>
     </head>
 
     <body>
@@ -16,12 +20,12 @@
             <div class="container-col">
                 <div class="col-4 score">
                     <img src="./images/nebula.png" alt="">
-                    Score <span id="score"> 01 </span>
+                    Score <span id="score"></span>
                 </div>
 
                 <div class="col-8 bg-green">
-                    <div>
-                        Encontraste una coincidencia!
+                    <div  id="message">
+                    
                     </div>
 
                     <div>
@@ -31,21 +35,10 @@
             </div>
 
             <div class="grid">
-                <img src="./images/blank.png" alt="name">
-                <img src="./images/blank.png" alt="name">
-                <img src="./images/white.png" alt="name">
-                <img src="./images/drax.png" alt="name">
-                <img src="./images/rocket.png" alt="name">
-                <img src="./images/gamora.png" alt="name">
-                <img src="./images/yondu.png" alt="name">
-                <img src="./images/star_lord.png" alt="name">
-                <img src="./images/blank.png" alt="name">
-                <img src="./images/blank.png" alt="name">
-                <img src="./images/white.png" alt="name">
-                <img src="./images/gamora.png" alt="name">
+                
             </div>
 
-            <button class="btn-new-game"> NEW GAME</button>
+            <button class="btn-new-game" id="btnNewGame"> NEW GAME</button>
         </div>
     </body>
 
