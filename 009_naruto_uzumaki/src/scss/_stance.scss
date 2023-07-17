@@ -1,0 +1,35 @@
+@use 'variable';
+
+.stance {
+    background: variable.$sprite-background;
+    background-position: -1px -24px;
+    height: 80px;
+    width: 43px;
+    animation: stance 0.8s steps(1) infinite;
+}
+
+@keyframes stance {
+    0% {
+        background-position: -1px -24px;
+    }
+
+    20% {
+        background-position: -43px -24px;
+    }
+
+    40% {
+        background-position: -84px -24px;
+    }
+
+    60% {
+        background-position: -127px -24px;
+    }
+
+    80% {
+        background-position: -168px -24px;
+    }
+
+    100% {
+        background-position: -212px -24px;
+    }
+}

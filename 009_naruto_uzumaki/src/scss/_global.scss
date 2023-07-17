@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.naruto {
+    position: absolute;
+    bottom: 17px;
+    left: 48px;
+}
+
+.background {
+    background: url('../image/background.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    overflow: hidden;
+    /* padding: 148px; */
+    box-sizing: border-box;
+}
+
+.modal {
+    display: flex;
+    background-color: rgb(250, 236, 218);
+    width: 48%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
+    margin: 0 auto;
+
+    div {
+        display: block;
+    }
+}
+
+.photo {
+    background: url('../image/sprite.png') no-repeat;
+    height: 46px;
+    width: 31px;
+    background-position: -870px -449px;
+    background-size: 980px;
+    padding: 20px;
+    background-color: rgb(250, 236, 218);
+}
+
+.developer{    
+    width: 200px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: absolute;
+    top: 50px;
+
+}

@@ -1,0 +1,20 @@
+@use 'variable';
+
+.crouch{
+    background: variable.$sprite-background;
+    animation: crouch 1s steps(1) infinite;
+    height: 73px;
+    width: 48px;
+    background-position: -300px -34px;
+}
+
+@keyframes crouch {
+    0%{
+        
+        background-position: -348px -30px;
+    }
+    100%{
+        background-position: -300px -34px;
+    }
+
+}
