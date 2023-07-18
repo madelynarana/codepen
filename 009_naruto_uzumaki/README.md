@@ -1,7 +1,7 @@
 # Naruto Uzumaki
  Movimientos de pelea.
 
-# 💜 Demo   [click aquí]([https://madelynarana.github.io/naruto_uzumaki/](https://madelynarana.github.io/codepen/009_naruto_uzumaki/))
+# 💜 Demo   [click aquí](https://madelynarana.github.io/codepen/009_naruto_uzumaki/)
 
 <img src="https://raw.githubusercontent.com/madelynarana/assets/master/naruto/naruto.gif">
 
