@@ -1,0 +1,27 @@
+@use 'variable';
+
+.run {
+    animation: run 0.4s steps(1) infinite; 
+    background-position: -679px -33px;
+    background: variable.$sprite-background;
+    height: 77px;
+    width: 64px;
+}
+
+
+@keyframes run {
+    0% {
+        background-position: -679px -33px;
+    }
+    
+    66% {
+        background-position: -746px -33px;
+        
+    }
+    
+    100% {
+        background-position: -806px -33px;
+        
+    }
+
+}

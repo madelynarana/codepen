@@ -1,0 +1,25 @@
+@use 'variable';
+
+.jump {
+    animation: jump 0.6s steps(1) infinite;
+    background: variable.$sprite-background;
+    height: 73px;
+    width: 48px;
+    background-position: -431px -32px;
+}
+
+@keyframes jump {
+    30% {
+
+        background-position: -431px -32px;
+    }
+
+    60% {
+        background-position: -542px -26px;
+    }
+
+    100% {
+        background-position: -601px -32px;
+
+    }
+}

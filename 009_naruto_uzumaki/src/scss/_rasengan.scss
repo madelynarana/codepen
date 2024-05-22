@@ -1,0 +1,88 @@
+@use 'variable';
+
+
+.rasengan {
+    animation: rasengan 3s steps(1) infinite;
+    background-position: -40px -150px;
+    background: variable.$sprite-background;
+    height: 72px;
+    width: 77px;
+}
+
+@keyframes rasengan {
+    0% {
+        background-position: -40px -150px;
+    }
+
+    5% {
+        background-position: -124px -150px;
+    }
+
+    10% {
+        background-position: -208px -150px;
+    }
+
+    15% {
+        background-position: -271px -150px;
+    }
+
+    20% {
+        background-position: -347px -150px;
+    }
+
+    25% {
+        background-position: -470px -150px;
+    }
+
+    30% {
+        background-position: -527px -150px;
+    }
+
+    35% {
+        background-position: -591px -150px;
+    }
+
+    40% {
+        background-position: -904px -150px;
+    }
+
+    45% {
+        background-position: -968px -150px;
+    }
+
+    50% {
+        background-position: -1057px -150px;
+    }
+
+    55% {
+        background-position: -18px -265px;
+    }
+
+    60% {
+        background-position: -90px -265px;
+    }
+
+    65% {
+        background-position: -158px -265px;
+    }
+
+    75% {
+        background-position: -227px -265px;
+    }
+
+    80% {
+        background-position: -302px -265px;
+    }
+
+    85% {
+        background-position: -374px -265px;
+    }
+
+    90% {
+        background-position: -446px -265px;
+    }
+
+    100% {
+        background-position: -525px -265px;
+    }
+}

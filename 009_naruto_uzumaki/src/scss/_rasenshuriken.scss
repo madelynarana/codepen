@@ -1,0 +1,120 @@
+@use 'variable';
+
+.rasenshuriken {
+    animation: 5s rasenshuriken steps(1) infinite;
+    background-position: -7px -370px;
+    background: variable.$sprite-background;
+    height: 96px;
+    width: 56px;
+}
+
+
+@keyframes rasenshuriken {
+
+    0% {
+        background-position: -9px -712px;
+    }
+
+    4% {
+        background-position: -81px -712px;
+    }
+
+    9% {
+        background-position: -150px -712px;
+    }
+
+    14% {
+        background-position: -230px -712px;
+    }
+
+    19% {
+        background-position: -301px -712px;
+    }
+
+    23% {
+        background-position: -365px -712px;
+    }
+
+    28% {
+        background-position: -432px -712px;
+    }
+
+    33% {
+        background-position: -501px -712px;
+        height: 96px;
+        width: 63px;
+    }
+
+    38% {
+        background-position: -571px -712px;
+        width: 63px;
+    }
+
+    42% {
+        background-position: -643px -712px;
+        width: 63px;
+    }
+
+    47% {
+        background-position: -711px -712px;
+        width: 63px;
+    }
+
+    52% {
+        background-position: -795px -712px;
+        width: 97px;
+    }
+
+    57% {
+        background-position: -876px -712px;
+        width: 92px;
+    }
+
+    61% {
+        background-position: -955px -712px;
+        width: 92px;
+    }
+
+    66% {
+        background-position: -1034px -712px;
+        width: 92px;
+    }
+
+    71% {
+        background-position: -5px -830px;
+        width: 66px;
+    }
+
+    76% {
+        background-position: -74px -830px;
+        width: 84px;
+    }
+
+    80% {
+        background-position: -170px -830px;
+        width: 115px;
+    }
+
+    85% {
+        background-position: -286px -830px;
+        width: 148px;
+    }
+
+    90% {
+        background-position: -456px -830px;
+        width: 194px;
+    }
+
+    95% {
+        background-position: -1103px -830px;
+        width: 56px;
+    }
+
+    100% {
+        background-position: -1152px -830px;
+        width: 56px;
+    }
+
+
+
+}
